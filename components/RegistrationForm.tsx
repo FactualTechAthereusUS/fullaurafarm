@@ -5,10 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 
-// API URL from environment variable - Use proxy for development
-const API_URL = process.env.NODE_ENV === 'development' 
-  ? '/api'  // Use Next.js rewrites for development
-  : 'https://portal.aurafarming.co/api';
+// API URL - Direct IP to avoid domain conflicts (temporary fix)
+const API_URL = 'http://159.223.103.126:3000/api';
 
 interface UsernameStatus {
   checking: boolean;
