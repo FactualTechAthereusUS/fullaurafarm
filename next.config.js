@@ -17,6 +17,16 @@ const nextConfig = {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://portal.aurafarming.co/api',
   },
   
+  // API rewrites to DigitalOcean backend
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'https://portal.aurafarming.co/api/:path*'
+      }
+    ]
+  },
+  
   // Headers for security
   async headers() {
     return [
