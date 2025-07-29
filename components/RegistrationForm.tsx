@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 
-// API URL - Use dedicated API subdomain to avoid mixed content issues
+// API URL - Use dedicated API subdomain to avoid mixed content issues (DEPLOYMENT READY)
 const API_URL = 'https://api.aurafarming.co';
 
 interface UsernameStatus {
