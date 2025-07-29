@@ -7,11 +7,6 @@
   "env": {
     "NEXT_PUBLIC_API_URL": "https://portal.aurafarming.co/api"
   },
-  "functions": {
-    "app/api/**": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "rewrites": [
     {
       "source": "/api/(.*)",
