@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 
-// API URL - Direct IP to avoid domain conflicts (temporary fix)
-const API_URL = 'http://159.223.103.126:3000/api';
+// API URL - Use dedicated API subdomain to avoid mixed content issues
+const API_URL = 'https://api.aurafarming.co';
 
 interface UsernameStatus {
   checking: boolean;
