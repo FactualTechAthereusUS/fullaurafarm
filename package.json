@@ -1,7 +1,8 @@
 {
-  "name": "auramail-employee-portal",
-  "version": "1.0.0",
-  "description": "Employee self-registration portal for AuraMail email system",
+  "name": "auramail-portal",
+  "version": "2.0.0",
+  "description": "Modern macOS-style email portal for AuraMail",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -10,32 +11,33 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hookform/resolvers": "^3.3.0",
-    "autoprefixer": "^10.4.0",
-    "bcryptjs": "^2.4.3",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.0.0",
-    "framer-motion": "^10.16.0",
-    "lucide-react": "^0.294.0",
-    "mysql2": "^3.6.0",
-    "next": "^14.0.0",
+    "next": "14.2.30",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.0",
     "postcss": "^8.4.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-hook-form": "^7.47.0",
-    "tailwind-merge": "^2.0.0",
-    "tailwindcss": "^3.3.0",
-    "tailwindcss-animate": "^1.0.7",
-    "zod": "^3.22.0"
+    "autoprefixer": "^10.4.0",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.400.0",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.3.0",
+    "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-label": "^2.0.0",
+    "@radix-ui/react-slot": "^1.0.0",
+    "class-variance-authority": "^0.7.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/bcryptjs": "^2.4.0",
-    "@types/node": "^20.0.0",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "eslint": "^8.0.0",
-    "eslint-config-next": "^14.0.0",
-    "typescript": "^5.0.0"
+    "@tailwindcss/typography": "^0.5.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.30"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": [
     "email",
